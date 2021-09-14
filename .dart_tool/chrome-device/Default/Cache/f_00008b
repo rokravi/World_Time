@@ -1,0 +1,352 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/animation/animation_controller.dart', 'packages/flutter/src/animation/listener_helpers.dart', 'packages/flutter/src/animation/curves.dart', 'packages/vector_math/vector_math_64.dart', 'packages/flutter/src/painting/fractional_offset.dart', 'packages/flutter/src/painting/box_decoration.dart', 'packages/flutter/src/painting/border_radius.dart'], (function load__packages__flutter_spinkit__src__square_circle_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__animation__animation_controller$46dart, packages__flutter__src__animation__listener_helpers$46dart, packages__flutter__src__animation__curves$46dart, packages__vector_math__vector_math_64$46dart, packages__flutter__src__painting__fractional_offset$46dart, packages__flutter__src__painting__box_decoration$46dart, packages__flutter__src__painting__border_radius$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _internal = dart_sdk._internal;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const ticker_provider = packages__flutter__src__widgets__widget_span$46dart.src__widgets__ticker_provider;
+  const animation_controller = packages__flutter__src__animation__animation_controller$46dart.src__animation__animation_controller;
+  const animations = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animations;
+  const tween = packages__flutter__src__animation__listener_helpers$46dart.src__animation__tween;
+  const animation = packages__flutter__src__animation__listener_helpers$46dart.src__animation__animation;
+  const curves = packages__flutter__src__animation__curves$46dart.src__animation__curves;
+  const vector_math_64 = packages__vector_math__vector_math_64$46dart.vector_math_64;
+  const fractional_offset = packages__flutter__src__painting__fractional_offset$46dart.src__painting__fractional_offset;
+  const box_decoration = packages__flutter__src__painting__box_decoration$46dart.src__painting__box_decoration;
+  const border_radius = packages__flutter__src__painting__border_radius$46dart.src__painting__border_radius;
+  var square_circle = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    BuildContextAndintToWidget: () => (T.BuildContextAndintToWidget = dart.constFn(dart.fnType(framework.Widget, [framework.BuildContext, core.int])))(),
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    TweenOfdouble: () => (T.TweenOfdouble = dart.constFn(tween.Tween$(core.double)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: core.Duration.prototype,
+        [Duration__duration]: 500000
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "size",
+        [_Location_column]: 11,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C2() {
+      return C[2] = dart.constList([C[3] || CT.C3, C[4] || CT.C4], widget_inspector._Location);
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[2] || CT.C2,
+        [_Location_name]: null,
+        [_Location_column]: 25,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/Ravi%20Singh/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-5.0.0/lib/src/square_circle.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "transform",
+        [_Location_column]: 9,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "alignment",
+        [_Location_column]: 9,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7, C[8] || CT.C8, C[9] || CT.C9], widget_inspector._Location);
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 14,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/Ravi%20Singh/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-5.0.0/lib/src/square_circle.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 7,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 53,
+        [_Location_file]: "file:///C:/Users/Ravi%20Singh/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-5.0.0/lib/src/square_circle.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "decoration",
+        [_Location_column]: 11,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///C:/Users/Ravi%20Singh/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-5.0.0/lib/src/square_circle.dart"
+      });
+    }
+  }, false);
+  var C = Array(16).fill(void 0);
+  var I = [
+    "file:///C:/Users/Ravi%20Singh/AppData/Local/Pub/Cache/hosted/pub.dartlang.org/flutter_spinkit-5.0.0/lib/src/square_circle.dart",
+    "package:flutter_spinkit/src/square_circle.dart"
+  ];
+  var color$ = dart.privateName(square_circle, "SpinKitSquareCircle.color");
+  var size$ = dart.privateName(square_circle, "SpinKitSquareCircle.size");
+  var itemBuilder$ = dart.privateName(square_circle, "SpinKitSquareCircle.itemBuilder");
+  var duration$ = dart.privateName(square_circle, "SpinKitSquareCircle.duration");
+  var controller$ = dart.privateName(square_circle, "SpinKitSquareCircle.controller");
+  var Duration__duration = dart.privateName(core, "Duration._duration");
+  square_circle.SpinKitSquareCircle = class SpinKitSquareCircle extends framework.StatefulWidget {
+    get color() {
+      return this[color$];
+    }
+    set color(value) {
+      super.color = value;
+    }
+    get size() {
+      return this[size$];
+    }
+    set size(value) {
+      super.size = value;
+    }
+    get itemBuilder() {
+      return this[itemBuilder$];
+    }
+    set itemBuilder(value) {
+      super.itemBuilder = value;
+    }
+    get duration() {
+      return this[duration$];
+    }
+    set duration(value) {
+      super.duration = value;
+    }
+    get controller() {
+      return this[controller$];
+    }
+    set controller(value) {
+      super.controller = value;
+    }
+    createState() {
+      return new square_circle._SpinKitSquareCircleState.new();
+    }
+  };
+  (square_circle.SpinKitSquareCircle.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let color = opts && 'color' in opts ? opts.color : null;
+    let size = opts && 'size' in opts ? opts.size : 50;
+    let itemBuilder = opts && 'itemBuilder' in opts ? opts.itemBuilder : null;
+    let duration = opts && 'duration' in opts ? opts.duration : C[0] || CT.C0;
+    let controller = opts && 'controller' in opts ? opts.controller : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[color$] = color;
+    this[size$] = size;
+    this[itemBuilder$] = itemBuilder;
+    this[duration$] = duration;
+    this[controller$] = controller;
+    if (!(!(T.BuildContextAndintToWidget().is(itemBuilder) && ui.Color.is(color)) && !(itemBuilder == null && color == null))) dart.assertFailed("You should specify either a itemBuilder or a color", I[0], 13, 16, "!(itemBuilder is IndexedWidgetBuilder && color is Color) && !(itemBuilder == null && color == null)");
+    square_circle.SpinKitSquareCircle.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = square_circle.SpinKitSquareCircle.prototype;
+  dart.addTypeTests(square_circle.SpinKitSquareCircle);
+  dart.addTypeCaches(square_circle.SpinKitSquareCircle);
+  dart.setMethodSignature(square_circle.SpinKitSquareCircle, () => ({
+    __proto__: dart.getMethods(square_circle.SpinKitSquareCircle.__proto__),
+    createState: dart.fnType(square_circle._SpinKitSquareCircleState, [])
+  }));
+  dart.setLibraryUri(square_circle.SpinKitSquareCircle, I[1]);
+  dart.setFieldSignature(square_circle.SpinKitSquareCircle, () => ({
+    __proto__: dart.getFields(square_circle.SpinKitSquareCircle.__proto__),
+    color: dart.finalFieldType(dart.nullable(ui.Color)),
+    size: dart.finalFieldType(core.double),
+    itemBuilder: dart.finalFieldType(dart.nullable(dart.fnType(framework.Widget, [framework.BuildContext, core.int]))),
+    duration: dart.finalFieldType(core.Duration),
+    controller: dart.finalFieldType(dart.nullable(animation_controller.AnimationController))
+  }));
+  var ___SpinKitSquareCircleState_controller = dart.privateName(square_circle, "_#_SpinKitSquareCircleState#controller");
+  var ___SpinKitSquareCircleState_animationCurve = dart.privateName(square_circle, "_#_SpinKitSquareCircleState#animationCurve");
+  var ___SpinKitSquareCircleState_animationSize = dart.privateName(square_circle, "_#_SpinKitSquareCircleState#animationSize");
+  var _itemBuilder = dart.privateName(square_circle, "_itemBuilder");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  const State_SingleTickerProviderStateMixin$36 = class State_SingleTickerProviderStateMixin extends framework.State$(square_circle.SpinKitSquareCircle) {};
+  (State_SingleTickerProviderStateMixin$36.new = function() {
+    ticker_provider.SingleTickerProviderStateMixin$(square_circle.SpinKitSquareCircle)[dart.mixinNew].call(this);
+    State_SingleTickerProviderStateMixin$36.__proto__.new.call(this);
+  }).prototype = State_SingleTickerProviderStateMixin$36.prototype;
+  dart.applyMixin(State_SingleTickerProviderStateMixin$36, ticker_provider.SingleTickerProviderStateMixin$(square_circle.SpinKitSquareCircle));
+  square_circle._SpinKitSquareCircleState = class _SpinKitSquareCircleState extends State_SingleTickerProviderStateMixin$36 {
+    get controller() {
+      let t0;
+      t0 = this[___SpinKitSquareCircleState_controller];
+      return t0 == null ? dart.throw(new _internal.LateError.fieldNI("controller")) : t0;
+    }
+    set controller(t0) {
+      this[___SpinKitSquareCircleState_controller] = t0;
+    }
+    get animationCurve() {
+      let t1;
+      t1 = this[___SpinKitSquareCircleState_animationCurve];
+      return t1 == null ? dart.throw(new _internal.LateError.fieldNI("animationCurve")) : t1;
+    }
+    set animationCurve(t1) {
+      this[___SpinKitSquareCircleState_animationCurve] = t1;
+    }
+    get animationSize() {
+      let t2;
+      t2 = this[___SpinKitSquareCircleState_animationSize];
+      return t2 == null ? dart.throw(new _internal.LateError.fieldNI("animationSize")) : t2;
+    }
+    set animationSize(t2) {
+      this[___SpinKitSquareCircleState_animationSize] = t2;
+    }
+    initState() {
+      let t3, t3$;
+      super.initState();
+      this.controller = (t3$ = (t3 = this.widget.controller, t3 == null ? new animation_controller.AnimationController.new({vsync: this, duration: this.widget.duration}) : t3), (() => {
+        t3$.addListener(dart.fn(() => this.setState(dart.fn(() => {
+        }, T.VoidTovoid())), T.VoidTovoid()));
+        t3$.repeat({reverse: true});
+        return t3$;
+      })());
+      let animation = new animations.CurvedAnimation.new({parent: this.controller, curve: curves.Curves.easeInOutCubic});
+      this.animationCurve = new (T.TweenOfdouble()).new({begin: 1.0, end: 0.0}).animate(animation);
+      this.animationSize = new (T.TweenOfdouble()).new({begin: 0.5, end: 1.0}).animate(animation);
+    }
+    dispose() {
+      this.controller.dispose();
+      super.dispose();
+    }
+    build(context) {
+      let t3;
+      let sizeValue = this.widget.size * this.animationSize.value;
+      return new basic.Center.new({child: new basic.Transform.new({transform: (t3 = vector_math_64.Matrix4.identity(), (() => {
+            t3.rotateZ(this.animationCurve.value * 3.141592653589793);
+            return t3;
+          })()), alignment: fractional_offset.FractionalOffset.center, child: new basic.SizedBox.fromSize({size: new ui.Size.square(sizeValue), child: this[_itemBuilder](0, 0.5 * sizeValue * this.animationCurve.value), $creationLocationd_0dea112b090073317d4: C[1] || CT.C1}), $creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
+    }
+    [_itemBuilder](index, curveValue) {
+      return this.widget.itemBuilder != null ? dart.nullCheck(this.widget.itemBuilder)(this.context, index) : new container.DecoratedBox.new({decoration: new box_decoration.BoxDecoration.new({color: this.widget.color, borderRadius: new border_radius.BorderRadius.all(new ui.Radius.circular(curveValue))}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13});
+    }
+  };
+  (square_circle._SpinKitSquareCircleState.new = function() {
+    this[___SpinKitSquareCircleState_controller] = null;
+    this[___SpinKitSquareCircleState_animationCurve] = null;
+    this[___SpinKitSquareCircleState_animationSize] = null;
+    square_circle._SpinKitSquareCircleState.__proto__.new.call(this);
+    ;
+  }).prototype = square_circle._SpinKitSquareCircleState.prototype;
+  dart.addTypeTests(square_circle._SpinKitSquareCircleState);
+  dart.addTypeCaches(square_circle._SpinKitSquareCircleState);
+  dart.setMethodSignature(square_circle._SpinKitSquareCircleState, () => ({
+    __proto__: dart.getMethods(square_circle._SpinKitSquareCircleState.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext]),
+    [_itemBuilder]: dart.fnType(framework.Widget, [core.int, core.double])
+  }));
+  dart.setGetterSignature(square_circle._SpinKitSquareCircleState, () => ({
+    __proto__: dart.getGetters(square_circle._SpinKitSquareCircleState.__proto__),
+    controller: animation_controller.AnimationController,
+    animationCurve: animation.Animation$(core.double),
+    animationSize: animation.Animation$(core.double)
+  }));
+  dart.setSetterSignature(square_circle._SpinKitSquareCircleState, () => ({
+    __proto__: dart.getSetters(square_circle._SpinKitSquareCircleState.__proto__),
+    controller: animation_controller.AnimationController,
+    animationCurve: animation.Animation$(core.double),
+    animationSize: animation.Animation$(core.double)
+  }));
+  dart.setLibraryUri(square_circle._SpinKitSquareCircleState, I[1]);
+  dart.setFieldSignature(square_circle._SpinKitSquareCircleState, () => ({
+    __proto__: dart.getFields(square_circle._SpinKitSquareCircleState.__proto__),
+    [___SpinKitSquareCircleState_controller]: dart.fieldType(dart.nullable(animation_controller.AnimationController)),
+    [___SpinKitSquareCircleState_animationCurve]: dart.fieldType(dart.nullable(animation.Animation$(core.double))),
+    [___SpinKitSquareCircleState_animationSize]: dart.fieldType(dart.nullable(animation.Animation$(core.double)))
+  }));
+  dart.trackLibraries("packages/flutter_spinkit/src/square_circle.dart", {
+    "package:flutter_spinkit/src/square_circle.dart": square_circle
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["square_circle.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAgBe;;;;;;IACA;;;;;;IACe;;;;;;IACb;;;;;;IACY;;;;;;;AAGgB;IAA2B;;;QAjB/D;QACA;QACA;QACA;QACA;QACA;;IAJA;IACA;IACA;IACA;IACA;UAC+D,EAA3C,kCAAZ,WAAW,KAAkC,YAAN,KAAK,QAAgB,AAAY,WAAD,YAAY,AAAM,KAAD,8BAC7F;AACJ,qEAAW,GAAG;;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAaI;;IAAU;;AAAV;IAAU;;;AACZ;;IAAc;;AAAd;IAAc;;;AACd;;IAAa;;AAAb;IAAa;;;AAIjB,MAAX;AAImB,MAFzB,0BAAgC,KAAlB,AAAO,wBAAA,aAAc,yDAA2B,gBAAgB,AAAO,8BAArD;AAC5B,wBAAY,cAAM,cAAS;;AAC3B,6BAAgB;;;AACd,sBAAY,4CAAwB,wBAA0B;AACL,MAA/D,sBAAiB,AAA4B,oCAAf,UAAU,cAAa,SAAS;AACA,MAA9D,qBAAgB,AAA4B,oCAAf,UAAU,cAAa,SAAS;IAC/D;;AAIsB,MAApB,AAAW;AACI,MAAT;IACR;UAG0B;;AAClB,sBAAY,AAAO,AAAK,mBAAE,AAAc;AAC9C,YAAO,8BACE,6EACc;AAAY,uBAAQ,AAAe,AAAM;;4BAChC,kDACZ,mCACH,mBAAO,SAAS,UACpB,mBAAa,GAAG,AAAI,AAAY,MAAV,SAAS,GAAG,AAAe;IAIhE;mBAEwB,OAAc;AAAe,YAAA,AAAO,AAAY,mCAChD,AAAC,eAAnB,AAAO,yBAAa,cAAS,KAAK,IAClC,4CACc,6CACH,AAAO,iCACa,mCAAW,uBAAS,UAAU;IAE5D;;;mDA5CkB;uDACF;sDACA;;;EA2CzB","file":"../../../../../../../../../../../packages/flutter_spinkit/src/square_circle.dart.lib.js"}');
+  // Exports:
+  return {
+    src__square_circle: square_circle
+  };
+}));
+
+//# sourceMappingURL=square_circle.dart.lib.js.map
